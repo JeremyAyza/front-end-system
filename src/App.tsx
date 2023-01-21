@@ -1,22 +1,20 @@
 
 import "./App.css";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { createBrowserRouter, Route, RouterProvider, Routes,  } from "react-router-dom";
 import rutas from "./router-config";
 
+
+const MapeoRutas = rutas.map(elem => <Route key={elem.path} path={elem.path} element={<elem.element/>} ></Route>)
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <div className=''>
-          <Switch>
-            {
-              rutas.map(ruta => <Route key={ruta.path} path={ruta.path} exact={ruta.exact}><ruta.componente /></Route>)
-            }
-          </Switch>
-        </div>
+      <div className=''>
+			<Routes>
+				{MapeoRutas}
+			</Routes>
+      </div>
 
-      </BrowserRouter>
     </div>
   )
 }

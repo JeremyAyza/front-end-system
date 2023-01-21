@@ -1,30 +1,32 @@
+import { Link } from "react-router-dom";
+
 export default function ComponenteNav() {
   return (
     <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">CYBER SISTEM JCUBA</a>
+        <Link className="navbar-brand" to={"/"}>CYBER SISTEM JCUBA</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span> 
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="/usuario/listar">Usuarios</a>
+              <Link className="nav-link" to={"/usuario/listar"}>Usuarios</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link " href="/producto/listar" >Productos</a>
+              <Link className="nav-link " to={"/producto/listar"} >Productos</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link " href="/proveedor/listar" >Proveedores</a>
+              <Link className="nav-link " to={"/proveedor/listar"} >Proveedores</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link " href="/cliente/listar" >Clientes</a>
+              <Link className="nav-link " to={"/cliente/listar"} >Clientes</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link " href="/venta/nuevaventa" >Nueva Venta</a>
+              <Link className="nav-link " to={"/venta/nuevaventa"} >Nueva Venta</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link " href="/venta/ventas" >Ventas</a>
+              <Link className="nav-link " to={"/venta/ventas"} >Ventas</Link>
             </li>
           </ul>
         </div>

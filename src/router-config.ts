@@ -16,55 +16,55 @@ import ComponenteNuevaVenta from "./ventas/ComponenteNuevaVenta";
 import ComponenteVentas from "./ventas/ComponenteVentas";
 
 
-const rutas =
+const rutas = 
     [
         {
-            path: '/', componente: ComponenteLogin, exact: true
+				path: '/', element: ComponenteLogin
         },
         {
-            path: '/usuario/registrar', componente: ComponenteRegistrarUsuario, exact: true
+            path: '/usuario/registrar', element: ComponenteRegistrarUsuario
         },
         {
-            path: '/usuario/listar', componente: ComponenteListarUsuario, exact: true
+            path: '/usuario/listar', element: ComponenteListarUsuario
         },
         {
-            path: '/usuario/actualizar', componente: ComponenteActualizarUsuario, exact: true
+            path: '/usuario/actualizar', element: ComponenteActualizarUsuario
         },
         {
-            path: '/producto/actualizar', componente: ComponenteActualizarProducto, exact: true
+            path: '/producto/actualizar', element: ComponenteActualizarProducto
         },
         {
-            path: '/producto/registrar', componente: ComponenteRegistrarProducto, exact: true
+            path: '/producto/registrar', element: ComponenteRegistrarProducto
         },
         {
-            path: '/producto/listar', componente: ComponenteListarProducto, exact: true
+            path: '/producto/listar', element: ComponenteListarProducto
         },
         {
-            path: '/cliente/actualizar', componente: ComponenteActualizarCliente, exact: true
+            path: '/cliente/actualizar', element: ComponenteActualizarCliente
         },
         {
-            path: '/cliente/registrar', componente: ComponenteRegistrarCliente, exact: true
+            path: '/cliente/registrar', element: ComponenteRegistrarCliente
         },
         {
-            path: '/cliente/listar', componente: ComponenteListarCliente, exact: true
+            path: '/cliente/listar', element: ComponenteListarCliente
         },
         {
-            path: '/proveedor/listar', componente: ComponenteListarProveedor, exact: true
+            path: '/proveedor/listar', element: ComponenteListarProveedor
         },
         {
-            path: '/proveedor/registrar', componente: ComponenteRegistrarProveedor, exact: true
+            path: '/proveedor/registrar', element: ComponenteRegistrarProveedor
         },
         {
-            path: '/proveedor/actualizar', componente: ComponenteActualizarProveedor, exact: true
+            path: '/proveedor/actualizar', element: ComponenteActualizarProveedor
         },
         {
-            path: '/venta/nuevaventa', componente: ComponenteNuevaVenta, exact: true
+            path: '/venta/nuevaventa', element: ComponenteNuevaVenta
         },
         {
-            path: '/venta/ventas', componente: ComponenteVentas, exact: true
+            path: '/venta/ventas', element: ComponenteVentas
         },
         {
-            path: '/venta/detalle', componente: ComponenteDetalle, exact: true
+            path: '/venta/detalle', element: ComponenteDetalle
         }
     ];
 

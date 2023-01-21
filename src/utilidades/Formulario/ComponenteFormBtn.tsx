@@ -9,14 +9,10 @@ export default function ComponenteFormBtn(props: datoForm) {
             </span>
         </a>
         </div>
-
-        
-
-
     )
 }
 
 interface datoForm {
-    ruta: string,
+  ruta: string,
     
 }

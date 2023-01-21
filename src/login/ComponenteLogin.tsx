@@ -11,7 +11,7 @@ export default function ComponenteLogin(){
                 <ComponenteFormGroup valor="Correo" type="text" entidad="usuario"></ComponenteFormGroup>
                 <ComponenteFormGroup valor="Contraseña" type="password" entidad="usuario"></ComponenteFormGroup>
 
-                <ComponenteFormBtn ruta="/usuario/listar" /> 
+                <ComponenteFormBtn ruta="usuario/listar" /> 
 
                 <p className="my-1  text-dark">&copy;  2022 - JCUBA</p>
             </form>
