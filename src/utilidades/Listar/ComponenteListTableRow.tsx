@@ -17,10 +17,10 @@ export default function ComponenteListTableRow(props: datoList) {
 				</a>
 			</td>
 			<td>
-				<a href="/" className="btn btn btn-outline-danger px-2" >
+				<div className="btn btn btn-outline-danger px-2" >
 					<BsTrashFill></BsTrashFill>
 					 Eliminar
-				</a>
+				</div>
 			</td>
 		</tr>
 
